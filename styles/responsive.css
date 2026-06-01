@@ -1,0 +1,250 @@
+
+/* Адаптивность 1600px */
+@media (max-width: 1600px) {
+  .container {
+    width: min(100% - 40px, 1400px);
+  }
+  .title {
+    font-size: 44px;
+  }
+  .section__title {
+    font-size: 30px;
+  }
+}
+
+/* Адаптивность 1280px */
+@media (max-width: 1280px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .panel--hero {
+    min-height: auto;
+  }
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta__panel {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .cta__text {
+    max-width: 100%;
+  }
+  .cta__title {
+    font-size: 26px;
+  }
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .audience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Адаптивность 960px */
+@media (max-width: 960px) {
+  .topbar__inner {
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+  }
+  
+  .nav {
+    display: none;
+  }
+
+  .actions {
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+  }
+  
+  .title {
+    font-size: 36px;
+    max-width: 100%;
+  }
+  .section__title {
+    font-size: 28px;
+  }
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pricing {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+  .problem-list {
+    grid-template-columns: 1fr;
+  }
+  .stat-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .rank-item {
+    grid-template-columns: 36px 1fr auto;
+    gap: 8px;
+  }
+  .rank-item__name {
+    font-size: 12px;
+  }
+  .rank-item__score {
+    font-size: 16px;
+  }
+}
+
+/* Адаптивность 720px */
+@media (max-width: 720px) {
+  .hero {
+    padding: 32px 0 32px;
+  }
+  .panel--hero {
+    padding: 20px;
+  }
+  .title {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+  }
+  .desc {
+    font-size: 13px;
+  }
+  .section__title {
+    font-size: 24px;
+  }
+  .section__desc {
+    font-size: 13px;
+    padding: 0 16px;
+  }
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+  .card__text {
+    font-size: 13px;
+  }
+  .step-card {
+    min-height: auto;
+  }
+  .feature-card {
+    min-height: auto;
+  }
+  .cta__panel {
+    padding: 20px;
+  }
+  .cta__title {
+    font-size: 22px;
+  }
+  .btn-group {
+    justify-content: center;
+  }
+  .btn {
+    padding: 0 14px;
+    font-size: 11px;
+    min-height: 32px;
+  }
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 16px 0;
+  }
+}
+
+/* Адаптивность 360px и меньше */
+@media (max-width: 360px) {
+  .container {
+    width: min(100% - 24px, 1400px);
+  }
+  .title {
+    font-size: 24px;
+  }
+  .section__title {
+    font-size: 20px;
+  }
+  .kicker {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .brand__text {
+    font-size: 16px;
+  }
+  .brand__mark {
+    width: 28px;
+    height: 28px;
+  }
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .dashboard {
+    padding: 12px;
+  }
+  .dashboard__title {
+    font-size: 16px;
+  }
+  .rank-item {
+    grid-template-columns: 28px 1fr auto;
+    gap: 6px;
+    padding: 10px;
+  }
+  .rank-item__number {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .rank-item__name {
+    font-size: 11px;
+  }
+  .rank-item__meta {
+    font-size: 9px;
+  }
+  .rank-item__score {
+    font-size: 14px;
+  }
+  .stat-card {
+    padding: 10px;
+  }
+  .stat-card__value {
+    font-size: 14px;
+  }
+  .step-card {
+    padding: 14px;
+  }
+  .step-card__title {
+    font-size: 16px;
+  }
+  .step-card__text {
+    font-size: 11px;
+  }
+  .price-card {
+    padding: 16px;
+  }
+  .price-card__title {
+    font-size: 18px;
+  }
+  .cta__title {
+    font-size: 20px;
+  }
+  .cta__text {
+    font-size: 12px;
+  }
+  .section__eyebrow {
+    font-size: 10px;
+  }
+}
