@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <title>Смартоценка</title>
+  <meta
+    name="description"
+    content="Смартоценка, веб-сервис для автоматизации экспертной оценки, прозрачного подведения итогов и проведения конкурсов без ручного подсчета."
+  />
+</head>
+<body>
+  <div class="landing">
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top">
+          <span class="brand__mark">
+            <img src="src/image/logo.png" alt="Логотип">
+          </span>
+          <span class="brand__text">Смартоценка</span>
+        </a>
+
+        <nav class="nav">
+          <a class="nav__link" href="#problem">Проблема</a>
+          <a class="nav__link" href="#process">Как работает</a>
+          <a class="nav__link" href="#features">Преимущества</a>
+          <a class="nav__link" href="#pricing">Тарифы</a>
+          <a class="nav__link" href="#contact">Контакты</a>
+        </nav>
+
+        <div class="actions">
+          <a class="btn btn--ghost" href="#contact">Позвонить</a>
+          <a class="btn btn--primary" href="#contact">Заказать прототип</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="panel panel--hero">
+            <div class="kicker">
+              <span class="kicker__dot"></span>
+              Платформа для экспертной оценки
+            </div>
+
+            <h1 class="title">
+              Конкурсы без права на ошибку
+              
+            </h1>
+
+            <p class="desc">
+              Смартоценка помогает организаторам проводить конкурсы, фестивали, олимпиады,
+              грантовые отборы и стартап-сессии в одной цифровой среде: от настройки критериев
+              до итогового рейтинга и отчетов.
+            </p>
+
+            <div class="btn-group">
+              <a class="btn btn--primary" href="#contact">Попробовать сервис</a>
+              <a class="btn btn--secondary" href="#process">Как это работает</a>
+            </div>
+
+            <div class="benefits">
+              <div class="benefits__item">
+                <span class="benefits__icon">✓</span>
+                <span class="benefits__text">Итоги за несколько минут</span>
+              </div>
+
+              <div class="benefits__item">
+                <span class="benefits__icon">✓</span>
+                <span class="benefits__text">Личные кабинеты жюри и организатора</span>
+              </div>
+
+              <div class="benefits__item">
+                <span class="benefits__icon">✓</span>
+                <span class="benefits__text">Гибкие критерии, веса и приоритеты</span>
+              </div>
+
+              <div class="benefits__item">
+                <span class="benefits__icon">✓</span>
+                <span class="benefits__text">Прозрачный рейтинг и отчеты</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel dashboard">
+            <div class="dashboard__top">
+              <div class="dashboard__title">Панель организатора</div>
+              <div class="dashboard__badge">Онлайн</div>
+            </div>
+
+            <div class="dashboard__screen">
+              <div class="stat-grid">
+                <div class="stat-card">
+                  <div class="stat-card__label">Участники</div>
+                  <div class="stat-card__value">124</div>
+                </div>
+
+                <div class="stat-card">
+                  <div class="stat-card__label">Эксперты</div>
+                  <div class="stat-card__value">18</div>
+                </div>
+
+                <div class="stat-card">
+                  <div class="stat-card__label">Критерии</div>
+                  <div class="stat-card__value">9</div>
+                </div>
+              </div>
+
+              <div class="rank-list">
+                <div class="rank-item">
+                  <div class="rank-item__number">1</div>
+                  <div>
+                    <div class="rank-item__name">Проект «Нова»</div>
+                    <div class="rank-item__meta">Инновации • Презентация • Актуальность</div>
+                  </div>
+                  <div class="rank-item__score">96.4</div>
+                </div>
+
+                <div class="rank-item">
+                  <div class="rank-item__number">2</div>
+                  <div>
+                    <div class="rank-item__name">Команда «Аврора»</div>
+                    <div class="rank-item__meta">Сильная защита • Высокая согласованность</div>
+                  </div>
+                  <div class="rank-item__score">94.7</div>
+                </div>
+
+                <div class="rank-item">
+                  <div class="rank-item__number">3</div>
+                  <div>
+                    <div class="rank-item__name">Smart Lab</div>
+                    <div class="rank-item__meta">Лидер по бизнес-модели</div>
+                  </div>
+                  <div class="rank-item__score">92.9</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problem" class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__eyebrow">Проблема</div>
+            <h2 class="section__title">Почему обычные таблицы больше не справляются</h2>
+            <p class="section__desc">
+              Когда участников, критериев и членов жюри становится много, ручной подсчет
+              начинает тормозить весь процесс и снижает доверие к итогам.
+            </p>
+          </div>
+
+          <div class="problem-grid">
+            <div class="card">
+              <h3 class="card__title">Ручная обработка данных делает конкурс медленным и непрозрачным</h3>
+              <p class="card__text">
+                Бумажные протоколы, Excel и Google-таблицы подходят только для простых сценариев.
+                При росте объема данных увеличивается риск ошибок, появляется необходимость
+                перепроверки, а итоговый рейтинг становится сложно объяснить участникам и заказчику.
+              </p>
+            </div>
+
+            <div class="problem-list">
+              <div class="problem-list__item">
+                <div class="problem-list__icon">!</div>
+                <div class="problem-list__title">Ошибки в формулах</div>
+                <div class="problem-list__text">
+                  Даже одна неточность способна изменить финальный рейтинг.
+                </div>
+              </div>
+
+              <div class="problem-list__item">
+                <div class="problem-list__icon">!</div>
+                <div class="problem-list__title">Задержка результатов</div>
+                <div class="problem-list__text">
+                  На подсчет и сверку могут уходить часы, а иногда и дни.
+                </div>
+              </div>
+
+              <div class="problem-list__item">
+                <div class="problem-list__icon">!</div>
+                <div class="problem-list__title">Спорные ситуации</div>
+                <div class="problem-list__text">
+                  Организатору сложно доказать корректность подведения итогов.
+                </div>
+              </div>
+
+              <div class="problem-list__item">
+                <div class="problem-list__icon">!</div>
+                <div class="problem-list__title">Сложно масштабировать</div>
+                <div class="problem-list__text">
+                  Чем больше конкурс, тем выше нагрузка на команду и жюри.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__eyebrow">Процесс</div>
+            <h2 class="section__title">Как работает Смартоценка</h2>
+            <p class="section__desc">
+              Вся процедура проходит в одной системе — от создания конкурса до публикации итогов.
+            </p>
+          </div>
+
+          <div class="steps">
+            <div class="step-card">
+              <div class="step-card__number">1</div>
+              <div class="step-card__title">Создайте мероприятие</div>
+              <div class="step-card__text">
+                Укажите формат конкурса, название, этапы, параметры оценивания и обложку.
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-card__number">2</div>
+              <div class="step-card__title">Настройте критерии</div>
+              <div class="step-card__text">
+                Добавьте показатели, шкалы, веса, приоритеты и правила работы жюри.
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-card__number">3</div>
+              <div class="step-card__title">Пригласите участников и экспертов</div>
+              <div class="step-card__text">
+                Загрузите список участников и назначьте состав жюри в несколько кликов.
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-card__number">4</div>
+              <div class="step-card__title">Соберите оценки</div>
+              <div class="step-card__text">
+                Жюри выставляет баллы и комментарии в личных кабинетах с любого устройства.
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-card__number">5</div>
+              <div class="step-card__title">Получите рейтинг</div>
+              <div class="step-card__text">
+                Система автоматически рассчитывает итоговые баллы, места и сводные результаты.
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-card__number">6</div>
+              <div class="step-card__title">Экспортируйте отчеты</div>
+              <div class="step-card__text">
+                Публикуйте результаты, выгружайте отчеты и анализируйте согласованность оценок.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__eyebrow">Преимущества</div>
+            <h2 class="section__title">Что получает организатор</h2>
+            <p class="section__desc">
+              Смартоценка помогает не просто собирать оценки, а полноценно управлять конкурсной процедурой.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-card__icon">⚡</div>
+              <div class="feature-card__title">Быстрый подсчет</div>
+              <div class="feature-card__text">
+                Результаты рассчитываются автоматически сразу после завершения оценивания.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card__icon">⚙</div>
+              <div class="feature-card__title">Гибкая настройка</div>
+              <div class="feature-card__text">
+                Поддержка критериев, значимости показателей, шкал и разных форматов конкурсов.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card__icon">👥</div>
+              <div class="feature-card__title">Личные кабинеты</div>
+              <div class="feature-card__text">
+                Организаторы и жюри работают в удобных отдельных интерфейсах.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card__icon">📊</div>
+              <div class="feature-card__title">Аналитика</div>
+              <div class="feature-card__text">
+                Согласованность мнений, устойчивость результата и контроль качества оценивания.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card__icon">🏆</div>
+              <div class="feature-card__title">Прозрачный рейтинг</div>
+              <div class="feature-card__text">
+                Можно объяснить, как именно был получен каждый итоговый результат.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card__icon">📤</div>
+              <div class="feature-card__title">Экспорт итогов</div>
+              <div class="feature-card__text">
+                Отчеты, сводные таблицы и вывод результатов на экран мероприятия.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card__icon">🔒</div>
+              <div class="feature-card__title">Контроль процесса</div>
+              <div class="feature-card__text">
+                Все этапы конкурса находятся в одной защищенной цифровой среде.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card__icon">📱</div>
+              <div class="feature-card__title">Удобство для жюри</div>
+              <div class="feature-card__text">
+                Экспертам удобно работать даже с телефона или планшета.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__eyebrow">Для кого</div>
+            <h2 class="section__title">Подходит для разных типов мероприятий</h2>
+          </div>
+
+          <div class="audience-grid">
+            <div class="audience-card">
+              <div class="audience-card__title">Вузы и колледжи</div>
+              <div class="audience-card__text">
+                Студенческие проекты, фестивали, защиты, творческие и научные конкурсы.
+              </div>
+            </div>
+
+            <div class="audience-card">
+              <div class="audience-card__title">Школы и олимпиады</div>
+              <div class="audience-card__text">
+                Оценивание работ, выступлений, проектов и школьных инициатив.
+              </div>
+            </div>
+
+            <div class="audience-card">
+              <div class="audience-card__title">Грантовые программы</div>
+              <div class="audience-card__text">
+                Экспертный отбор заявок, прозрачные критерии и итоговые отчеты.
+              </div>
+            </div>
+
+            <div class="audience-card">
+              <div class="audience-card__title">Стартап-конкурсы</div>
+              <div class="audience-card__text">
+                Оценка питчей, инновационных проектов и бизнес-идей.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__eyebrow">Тарифы</div>
+            <h2 class="section__title">Пакеты под разные задачи</h2>
+            <p class="section__desc">
+              Можно начать с базового варианта или выбрать расширенный пакет с аналитикой и приоритетами.
+            </p>
+          </div>
+
+          <div class="pricing">
+            <div class="price-card">
+              <div class="price-card__label">Стандарт</div>
+              <div class="price-card__title">Для типовых конкурсов</div>
+              <div class="price-card__text">
+                Удобный старт для цифрового оценивания и быстрого подведения итогов.
+              </div>
+
+              <ul class="price-card__list">
+                <li class="price-card__item">Личный кабинет организатора</li>
+                <li class="price-card__item">Личный кабинет жюри</li>
+                <li class="price-card__item">Неограниченное число участников</li>
+                <li class="price-card__item">Неограниченное число критериев</li>
+                <li class="price-card__item">Автоматический расчет среднего балла</li>
+                <li class="price-card__item">Публикация результатов</li>
+              </ul>
+
+              <a class="btn btn--secondary" href="#contact">Выбрать Стандарт</a>
+            </div>
+
+            <div class="price-card price-card--accent">
+              <div class="price-card__label">PRO</div>
+              <div class="price-card__title">Для сложной экспертной оценки</div>
+              <div class="price-card__text">
+                Расширенные возможности для серьезных конкурсных процедур и аналитики.
+              </div>
+
+              <ul class="price-card__list">
+                <li class="price-card__item">Все возможности тарифа Стандарт</li>
+                <li class="price-card__item">Веса и приоритеты критериев</li>
+                <li class="price-card__item">Аналитика согласованности жюри</li>
+                <li class="price-card__item">Индивидуальные настройки конкурса</li>
+                <li class="price-card__item">Комментарии и заметки по участникам</li>
+                <li class="price-card__item">Сопровождение мероприятия</li>
+              </ul>
+
+              <a class="btn btn--primary" href="#contact">Выбрать PRO</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="cta">
+        <div class="container">
+          <div class="cta__panel">
+            <div>
+              <div class="section__eyebrow">Связаться</div>
+              <h2 class="cta__title">Проведите следующий конкурс без ошибок и спорных таблиц</h2>
+              <div class="cta__text">
+                Оставьте заявку, и мы покажем, как Смартоценка поможет автоматизировать
+                вашу конкурсную процедуру, ускорить подсчет результатов и повысить доверие к итогам.
+              </div>
+
+              <div class="btn-group">
+                <a class="btn btn--primary" href="#">Написать на почту</a>
+                <a class="btn btn--ghost" href="#">Позвонить</a>
+              </div>
+              <div style="margin-top: 16px;">
+                <a class="btn btn--primary" href="#">Скачать приложение</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© 2026 Смартоценка. Все права защищены.</div>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/animation.js"></script>
+</body>
+</html>
