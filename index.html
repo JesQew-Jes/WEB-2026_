@@ -17,12 +17,30 @@
       <div class="container topbar__inner">
         <a class="brand" href="#top">
           <span class="brand__mark">
-            <img src="image/logo.png" alt="Логотип">
+            <img src="src/image/logo.png" alt="Логотип">
           </span>
           <span class="brand__text">Смартоценка</span>
         </a>
 
+        <!-- Чекбокс для бургера -->
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label for="burger-checkbox" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Десктопная навигация -->
         <nav class="nav">
+          <a class="nav__link" href="#problem">Проблема</a>
+          <a class="nav__link" href="#process">Как работает</a>
+          <a class="nav__link" href="#features">Преимущества</a>
+          <a class="nav__link" href="#pricing">Тарифы</a>
+          <a class="nav__link" href="#contact">Контакты</a>
+        </nav>
+
+        <!-- Мобильная навигация (выезжающая) -->
+        <nav class="mobile-nav">
           <a class="nav__link" href="#problem">Проблема</a>
           <a class="nav__link" href="#process">Как работает</a>
           <a class="nav__link" href="#features">Преимущества</a>
@@ -63,26 +81,34 @@
             </div>
 
             <div class="benefits">
-              <div class="benefits__item">
-                <span class="benefits__icon">✓</span>
-                <span class="benefits__text">Итоги за несколько минут</span>
-              </div>
+  <div class="benefits__item">
+    <span class="benefits__icon">
+      <img src="src/image/user-trust.png" alt="Логотип">
+    </span>
+    <span class="benefits__text">Итоги за несколько минут</span>
+  </div>
 
-              <div class="benefits__item">
-                <span class="benefits__icon">✓</span>
-                <span class="benefits__text">Личные кабинеты жюри и организатора</span>
-              </div>
+  <div class="benefits__item">
+    <span class="benefits__icon">
+      <img src="src/image/user-trust.png" alt="Логотип">
+    </span>
+    <span class="benefits__text">Личные кабинеты жюри и организатора</span>
+  </div>
 
-              <div class="benefits__item">
-                <span class="benefits__icon">✓</span>
-                <span class="benefits__text">Гибкие критерии, веса и приоритеты</span>
-              </div>
+  <div class="benefits__item">
+    <span class="benefits__icon">
+      <img src="src/image/user-trust.png" alt="Логотип">
+    </span>
+    <span class="benefits__text">Гибкие критерии, веса и приоритеты</span>
+  </div>
 
-              <div class="benefits__item">
-                <span class="benefits__icon">✓</span>
-                <span class="benefits__text">Прозрачный рейтинг и отчеты</span>
-              </div>
-            </div>
+  <div class="benefits__item">
+    <span class="benefits__icon">
+      <img src="src/image/user-trust.png" alt="Логотип">
+    </span>
+    <span class="benefits__text">Прозрачный рейтинг и отчеты</span>
+  </div>
+</div>
           </div>
 
           <div class="panel dashboard">
@@ -163,39 +189,47 @@
               </p>
             </div>
 
-            <div class="problem-list">
-              <div class="problem-list__item">
-                <div class="problem-list__icon">!</div>
-                <div class="problem-list__title">Ошибки в формулах</div>
-                <div class="problem-list__text">
-                  Даже одна неточность способна изменить финальный рейтинг.
-                </div>
-              </div>
+      <div class="problem-list">
+  <div class="problem-list__item">
+    <div class="problem-list__icon">
+      <img src="src/image/ban.png" alt="Предупреждение">
+    </div>
+    <div class="problem-list__title">Ошибки в формулах</div>
+    <div class="problem-list__text">
+      Даже одна неточность способна изменить финальный рейтинг.
+    </div>
+  </div>
 
-              <div class="problem-list__item">
-                <div class="problem-list__icon">!</div>
-                <div class="problem-list__title">Задержка результатов</div>
-                <div class="problem-list__text">
-                  На подсчет и сверку могут уходить часы, а иногда и дни.
-                </div>
-              </div>
+  <div class="problem-list__item">
+    <div class="problem-list__icon">
+      <img src="src/image/ban.png" alt="Предупреждение">
+    </div>
+    <div class="problem-list__title">Задержка результатов</div>
+    <div class="problem-list__text">
+      На подсчет и сверку могут уходить часы, а иногда и дни.
+    </div>
+  </div>
 
-              <div class="problem-list__item">
-                <div class="problem-list__icon">!</div>
-                <div class="problem-list__title">Спорные ситуации</div>
-                <div class="problem-list__text">
-                  Организатору сложно доказать корректность подведения итогов.
-                </div>
-              </div>
+  <div class="problem-list__item">
+    <div class="problem-list__icon">
+      <img src="src/image/ban.png" alt="Предупреждение">
+    </div>
+    <div class="problem-list__title">Спорные ситуации</div>
+    <div class="problem-list__text">
+      Организатору сложно доказать корректность подведения итогов.
+    </div>
+  </div>
 
-              <div class="problem-list__item">
-                <div class="problem-list__icon">!</div>
-                <div class="problem-list__title">Сложно масштабировать</div>
-                <div class="problem-list__text">
-                  Чем больше конкурс, тем выше нагрузка на команду и жюри.
-                </div>
-              </div>
-            </div>
+  <div class="problem-list__item">
+    <div class="problem-list__icon">
+      <img src="src/image/ban.png" alt="Предупреждение">
+    </div>
+    <div class="problem-list__title">Сложно масштабировать</div>
+    <div class="problem-list__text">
+      Чем больше конкурс, тем выше нагрузка на команду и жюри.
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </section>
@@ -274,7 +308,9 @@
 
           <div class="feature-grid">
             <div class="feature-card">
-              <div class="feature-card__icon">⚡</div>
+              <div class="problem-list__icon">
+      <img src="src/image/bolt.png" alt="молния">
+    </div>
               <div class="feature-card__title">Быстрый подсчет</div>
               <div class="feature-card__text">
                 Результаты рассчитываются автоматически сразу после завершения оценивания.
@@ -282,7 +318,9 @@
             </div>
 
             <div class="feature-card">
-              <div class="feature-card__icon">⚙</div>
+             <div class="problem-list__icon">
+      <img src="src/image/settings.png" alt="молния">
+    </div> 
               <div class="feature-card__title">Гибкая настройка</div>
               <div class="feature-card__text">
                 Поддержка критериев, значимости показателей, шкал и разных форматов конкурсов.
@@ -290,7 +328,9 @@
             </div>
 
             <div class="feature-card">
-              <div class="feature-card__icon">👥</div>
+              <div class="problem-list__icon">
+      <img src="src/image/users.png" alt="люди">
+    </div> 
               <div class="feature-card__title">Личные кабинеты</div>
               <div class="feature-card__text">
                 Организаторы и жюри работают в удобных отдельных интерфейсах.
@@ -298,7 +338,9 @@
             </div>
 
             <div class="feature-card">
-              <div class="feature-card__icon">📊</div>
+              <div class="problem-list__icon">
+      <img src="src/image/signal-alt-2.png" alt="молния">
+    </div> 
               <div class="feature-card__title">Аналитика</div>
               <div class="feature-card__text">
                 Согласованность мнений, устойчивость результата и контроль качества оценивания.
@@ -306,7 +348,9 @@
             </div>
 
             <div class="feature-card">
-              <div class="feature-card__icon">🏆</div>
+              <div class="problem-list__icon">
+      <img src="src/image/feedback-hand.png" alt="рейтинг">
+    </div> 
               <div class="feature-card__title">Прозрачный рейтинг</div>
               <div class="feature-card__text">
                 Можно объяснить, как именно был получен каждый итоговый результат.
@@ -314,7 +358,9 @@
             </div>
 
             <div class="feature-card">
-              <div class="feature-card__icon">📤</div>
+              <div class="problem-list__icon">
+      <img src="src/image/move-to-folder-2.png" alt="экспорт">
+    </div> 
               <div class="feature-card__title">Экспорт итогов</div>
               <div class="feature-card__text">
                 Отчеты, сводные таблицы и вывод результатов на экран мероприятия.
@@ -322,7 +368,9 @@
             </div>
 
             <div class="feature-card">
-              <div class="feature-card__icon">🔒</div>
+              <div class="problem-list__icon">
+      <img src="src/image/shield-keyhole.png" alt="контроль">
+    </div> 
               <div class="feature-card__title">Контроль процесса</div>
               <div class="feature-card__text">
                 Все этапы конкурса находятся в одной защищенной цифровой среде.
@@ -330,7 +378,9 @@
             </div>
 
             <div class="feature-card">
-              <div class="feature-card__icon">📱</div>
+              <div class="problem-list__icon">
+      <img src="src/image/choose.png" alt="жюри">
+    </div> 
               <div class="feature-card__title">Удобство для жюри</div>
               <div class="feature-card__text">
                 Экспертам удобно работать даже с телефона или планшета.
@@ -435,22 +485,35 @@
         <div class="container">
           <div class="cta__panel">
             <div>
+              
               <div class="section__eyebrow">Связаться</div>
               <h2 class="cta__title">Проведите следующий конкурс без ошибок и спорных таблиц</h2>
               <div class="cta__text">
                 Оставьте заявку, и мы покажем, как Смартоценка поможет автоматизировать
-                вашу конкурсную процедуру, ускорить подсчет результатов и повысить доверие к итогам.
+                вашу конкурсную процедуру.
               </div>
 
               <div class="btn-group">
                 <a class="btn btn--primary" href="#">Написать на почту</a>
                 <a class="btn btn--ghost" href="#">Позвонить</a>
               </div>
-              <div style="margin-top: 16px;">
-                <a class="btn btn--primary" href="#">Скачать приложение</a>
+              
+            </div>
+            <div>
+              <div class="section__eyebrow">Скачать</div>
+              <h2 class="cta__title">Скачайте приложение уже сейчас</h2>
+              <div class="cta__text">
+                Приложение доступно на всех устройствах и Смартоценка покажет, как ускорить подсчет результатов и повысить доверие к итогам.
               </div>
+
+              <div class="btn-group">
+                <a class="btn btn--primary" href="#">AppStore</a>
+                <a class="btn btn--primary" href="#">PlayMarket</a>
+              </div>
+              
             </div>
           </div>
+          
         </div>
       </section>
     </main>
