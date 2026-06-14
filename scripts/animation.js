@@ -107,3 +107,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
 });
 
+
+  // Закрытие бургер-меню при клике на ссылку
+  document.querySelectorAll('.mobile-nav .nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      const burgerCheckbox = document.getElementById('burger-checkbox');
+      if (burgerCheckbox) {
+        burgerCheckbox.checked = false;
+        document.body.classList.remove('menu-open');
+      }
+    });
+  });
+
+  // Блокировка скролла при открытом меню
+  const burgerCheckbox = document.getElementById('burger-checkbox');
+  if (burgerCheckbox) {
+    burgerCheckbox.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.classList.add('menu-open');
+      } else {
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
