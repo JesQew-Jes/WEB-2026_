@@ -266,4 +266,4 @@ window.addEventListener('load', () => {
     }, 200);
 });
 
-console.log('✨ Исправленная анимация активирована!');
+
