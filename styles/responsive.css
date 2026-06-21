@@ -1,10 +1,10 @@
-/* Базовые стили (ширина экрана > 1600px) */
+
 .container {
   width: min(100% - 160px, 1600px);
   margin: 0 auto;
 }
 
-/* Базовые размеры шрифтов (экраны > 960px) */
+
 .title {
   font-size: 48px;
 }
@@ -48,35 +48,34 @@
   font-size: 14px;
 }
 
-/* Адаптивность: максимальная ширина контейнера = 1280px */
+
 @media (max-width: 1440px) {
   .container {
     width: min(100% - 80px, 1280px);
   }
 }
 
-/* Адаптивность: максимальная ширина контейнера = 960px */
+
 @media (max-width: 1194px) {
   .container {
     width: min(100% - 117px, 960px);
   }
 }
 
-/* Адаптивность: максимальная ширина контейнера = 720px */
+
 @media (max-width: 834px) {
   .container {
     width: min(100% - 57px, 720px);
   }
 }
 
-/* Адаптивность: максимальная ширина контейнера = 360px */
+
 @media (max-width: 412px) {
   .container {
     width: min(100% - 26px, 360px);
   }
 }
 
-/* ===== ПЕРВЫЙ БРЕЙКПОИНТ: ПЛАНШЕТЫ И ТЕЛЕФОНЫ (960px и меньше) ===== */
 @media (max-width: 960px) {
   .topbar__inner {
     justify-content: space-between;
@@ -94,7 +93,6 @@
     justify-content: flex-end;
   }
   
-  /* Изменения сеток */
   .hero__grid {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -141,7 +139,7 @@
     gap: 8px;
   }
   
-  /* Размеры шрифтов для 960px и меньше */
+  
   .title {
     font-size: 36px;
     max-width: 100%;
@@ -178,7 +176,6 @@
   }
 }
 
-/* ===== ВТОРОЙ БРЕЙКПОИНТ: МАЛЕНЬКИЕ ТЕЛЕФОНЫ (480px и меньше) ===== */
 @media (max-width: 480px) {
   .hero {
     padding: 32px 0 32px;
@@ -208,7 +205,6 @@
     padding: 16px 0;
   }
   
-  /* Сетки в один столбец */
   .steps {
     grid-template-columns: 1fr;
   }
@@ -225,7 +221,6 @@
     min-height: auto;
   }
   
-  /* Размеры шрифтов для 480px и меньше */
   .title {
     font-size: 28px;
     letter-spacing: -0.5px;
